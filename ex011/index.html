@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Aqui esta a foto de um casal lindo e apaixonado</h1>
+    <p>este casal é muito lindo e apaixonado</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/euebebe-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/euebb-m.png" type="image/png">
+    <img src="imagens/euebb-g.png" alt="imagem flexivel">
+
+</picture>
+<h1>partiu reprodudizr audios agora</h1>
+    <p>vamos lá</p>
+  <audio preload="metadata" autoplay controls loop>
+    
+    <source src="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3" type="audio/mpeg">
+    <source src="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3" type="audio/ogg">
+    <source src="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3" type="wav">
+    <p>
+        deu ruim cara, seu navegador nao toca, baixa a musica ai
+        <a href="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3"></a></p>
+  </audio>
+</body>
+</html>
