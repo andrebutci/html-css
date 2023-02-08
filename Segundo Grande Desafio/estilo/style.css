@@ -1,13 +1,27 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap');
+
+
+
+
+:root {
+--fonte1: Verdana, Geneva, Tahoma, sans-serif;
+--fonte2: 'Sriracha', cursive;
+--fonte3: 'Itim', 'cursive';
+}
+
 * {
     margin:0px;
     padding: 0px;
 }
 
 html, body {
+    font-family: var(--fonte1);
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: rgb(124, 119, 119);
 }
 
 header {
@@ -18,6 +32,8 @@ header {
 }
 
 header h1 {
+    font-size: 3em;
+    font-family: var(--fonte3);
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -38,6 +54,7 @@ header a:hover, footer, a:hover {
 }
 
 section {
+    font-family: var(--fonte2);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -45,20 +62,40 @@ section {
 
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal { 
     background-color: white;
     color: black;
+    
 
 }
 
 section.imagem {
     background-color: rgb(51,51,51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+
 section.imagem > p {
-    background-color: rgb(19, 18, 18);
+    background-color: rgba(36, 31, 31, 0);
     width: 300px;
+    text-shadow: 2px 2px 0px black;
 }
 
 
