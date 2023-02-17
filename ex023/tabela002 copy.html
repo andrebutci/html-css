@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Segunda Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h1 {
+            text-align:center;
+        }
+        
+        table {
+            height: 300px;
+            width: auto;
+            border-collapse: collapse; /* para tirar os espaços dos riscos da tabela */
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        thead {
+            background-color: darkblue;
+            color: white
+            
+        }  
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Inverno 2023</h1>
+    <!--
+       THEAD
+           TR, TD, TH
+       TBODY
+           TR, TD, TH
+       TFOOT
+           TR, TD, TH     
+           
+           Cabeça, Corpo e Pé
+    -->
+    <table>
+        <thead>
+              <tr>
+                <th>Refêrencia</th>
+                <th>Preço</th>
+              </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>Canguru Masculino</td>
+                <td class="numero">99,90</td>
+             </tr>
+             <tr>
+                <td>Canguru Feminino</td>
+                <td class="numero">95,90</td>
+             </tr>
+             <tr>
+                <td>Camiseta Masculina</td>
+                <td class="numero">35,90</td>
+             </tr>
+             <tr>
+                <td>Bermuda Masculina</td>
+                <td class="numero">45,90</td>
+             </tr>
+             <tr>
+                <td>Jaqueta Feminina</td>
+                <td class="numero">99,90</td>
+             </tr>
+             <tr>
+                <td>Calça Feminina</td>
+                <td class="numero">75,90</td>
+             </tr>
+             <tr>
+                <td>Jaqueta Masculina</td>
+                <td class="numero">105,90</td>
+             </tr>
+             <tr>
+                <td>Ted Feminino</td>
+                <td class="numero">109,90</td>
+             </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
