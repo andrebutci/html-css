@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 300px;
+            
+        }
+          
+       td.dado {
+    
+       }
+
+        td {
+            border: 0.1px solid black;
+            text-align: center; /* alinhamento horizoltal */
+            vertical-align: top; /* para alinhar a escrita de dentro da tabela para cima ou para baixo */
+
+        }
+        
+        .numero {
+            text-align: left; /* para deixar todo numero colocado á direita, porem devo configurar no body tambem */
+        }
+        
+        .numeropreço {
+            text-align: right;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <table> 
+        <th>
+           <tr>Codigo do masculino</tr>
+           <tr>Referencia</tr>
+           <tr>Preço</tr>
+        </th>       
+        <tr>
+          
+        </tr>
+        <tr>
+          <td>300</td>
+          <td>Canguru Masculino Flero</td>
+          <td class="numeropreço">R$ 99,90</td>
+          <td></td>
+        </tr>
+        <tr>
+            <td class="numero">330</td>
+            <td>Calça Masculina</td>
+            <td class="numeropreço">R$ 85,90</td>
+            <td></td>
+          </tr>
+    </table>
+</body>
+</html>
