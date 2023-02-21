@@ -26,13 +26,23 @@
             color: white
             
         }  
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkblue;
+        }
+
         .numero {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
-    <h1>Tabela de Inverno 2023</h1>
     <!--
        THEAD
            TR, TD, TH
@@ -42,13 +52,16 @@
            TR, TD, TH     
            
            Cabeça, Corpo e Pé
+        
+           Para mudar a largura do que quero dentro da tabela eu posso usar o style no proprio como o exemplo um pouco abaixo
     -->
     <table>
+        <caption><strong>Tabela de Inverno Flero 2023</strong></caption>
         <thead>
-              <tr>
-                <th>Código</th>
+              <tr> 
+                <th style="width: 50px;">Código</th>
                 <th>Refêrencia</th>
-                <th>Preço</th>
+                <th style="width: 70px;">Preço</th>
               </tr>
         </thead>
         <tbody>
@@ -92,10 +105,25 @@
                 <td>Ted Feminino</td>
                 <td class="numero">109,90</td>
              </tr>
+             <tr>
+                <td>300</td>
+                <td>Canguru Masculino</td>
+                <td class="numero">99,90</td>
+             </tr>
+             <tr>
+                <td>300</td>
+                <td>Canguru Masculino</td>
+                <td class="numero">99,90</td>
+             </tr>
+             <tr>
+                <td>300</td>
+                <td>Canguru Masculino</td>
+                <td class="numero">99,90</td>
+             </tr>
         </tbody>
         <tfoot>
-
         </tfoot>
     </table>
+  
 </body>
 </html>

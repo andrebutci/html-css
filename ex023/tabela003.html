@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Segunda Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        table {
+            width: 600px;
+            border-collapse: collapse; /* para tirar os espaços dos riscos da tabela */
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px
+        }
+        
+        thead {
+            background-color: darkblue;
+            color: white
+            
+        }  
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkcyan;
+        }
+
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+  
+    </style>
+</head>
+<body>
+    <!--
+       THEAD
+           TR, TD, TH
+       TBODY
+           TR, TD, TH
+       TFOOT
+           TR, TD, TH     
+           
+           Cabeça, Corpo e Pé
+        
+           Para mudar a largura do que quero dentro da tabela eu posso usar o style no proprio como o exemplo um pouco abaixo
+    -->
+    <table>
+        <caption><strong>Filmes Favoritos</strong></caption>
+        <thead>
+              <tr> 
+                <th style="width: 100px;">Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+              </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <th rowspan="3" style="background-color: pink;">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+             </tr>
+             <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+             </tr>
+             <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+             </tr>
+             <tr>
+                <th rowspan="3" style="background-color: darkblue; font-family: Arial, Helvetica, sans-serif; color: aliceblue;">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+             </tr>
+             <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>OldBoy</td>
+                <td>Dangal</td>
+             </tr>
+             <tr>
+                <td>Fabiano Mota</td>
+                <td>Stars Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+             </tr>
+    </table>
+</body>
+</html>
